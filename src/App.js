@@ -1,24 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import './css/App.css';
+import {BrowserRouter , Routes , Route} from 'react-router-dom'
+import Username from './components/Username';
+import Password from './components/Password';
+import Register from './components/Register';
+import Recover from './components/Recover';
+import Reset from './components/Reset';
+import Profile from './components/Profile';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+    <Routes>
+      <Route path='/' element={<Username/>}/>
+      <Route path='/register' rxact element={<Register/>}/>
+      <Route path='/password' rxact element={<Password/>}/>
+      <Route path='/recover' rxact element={<Recover/>}/>
+      <Route path='/reset' rxact element={<Reset/>}/>
+      <Route path='/profile' rxact element={<Profile/>}/>
+    </Routes>
+    </BrowserRouter>
   );
 }
 

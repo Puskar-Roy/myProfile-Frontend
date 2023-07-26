@@ -1,0 +1,139 @@
+.loginContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 80%;
+    margin: 10rem auto;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    border-radius: 15px;
+    
+    
+}
+.headIngs{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+.headh1{
+    font-size: 3rem;
+    font-weight: bold;
+    font-family: 'Work Sans', sans-serif;
+}
+.headh3{
+      font-family: 'Poppins', sans-serif;
+      font-size: 2rem;
+      font-weight: 400;
+}
+.headh2{
+    font-family: 'Roboto', sans-serif;
+}
+.loginForm{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 3.5rem;
+}
+.loginFormRE{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+}
+.loginFormReset{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1.8rem;
+}
+.email{
+    width: 30rem;
+    height: 4.5rem;
+    border-radius: 2rem;
+    padding: 0 2rem ;
+    border: transparent;
+    background-color: #ebeaea;
+}
+.email:focus{
+    outline:2px solid rgb(216, 57, 216);
+}
+.emailBtn{
+    width: 30rem;
+    height: 4.5rem;
+    background-color: rgb(216, 57, 216);
+    color: #282430;
+    border-radius: 1rem;
+    font-weight: 400;
+    transition: 0.2s ease-in;
+    color: #ebeaea;
+
+}
+.emailBtn:hover{
+    background-color: #f38ccf;
+    transition: 0.2s ease-in;
+   
+}
+.profile{
+    background-color:rgb(216, 57, 216) ;
+    border-radius: 82px;
+    height: 16rem;
+    width: 16rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+}
+img.profilimg {
+    height: 14rem;
+    border-radius: 50%;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+}
+.linkregister{
+    color: rgb(216, 57, 216);
+    font-family: 'Poppins', sans-serif;
+
+}
+.lgct{
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        padding: 5rem 3rem;
+        border-radius: 1.5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        background-color: #fff;
+
+}
+.lgctRE{
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        padding: 5rem 3rem;
+        border-radius: 1.5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 3.5rem;
+        background-color: #fff;
+
+}
+.lgctReset{
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        padding: 5rem 3rem;
+        border-radius: 1.5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 3.5rem;
+        background-color: #fff;
+
+}
