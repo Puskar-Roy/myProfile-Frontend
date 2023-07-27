@@ -46,7 +46,7 @@ const Password = () => {
   if (Object.keys(error).length === 0) {
     try {
       const { data } = await axios.post(
-        `${process.env.REACT_APP_URL}/api/login`,
+        `https://api-myprofile.onrender.com/api/login`,
         { userName, password }
       );
       localStorage.setItem("token", data.token);

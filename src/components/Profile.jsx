@@ -76,12 +76,12 @@ const Profile = () => {
     e.preventDefault();
     try {
       const token = await localStorage.getItem("token");
-      console.log("here1");
-      console.log(token);
-      console.log(user);
+      // console.log("here1");
+      // console.log(token);
+      // console.log(user);
 
       const data = await axios.put(
-        `${process.env.REACT_APP_URL}/api/updateProfile`,
+        `https://api-myprofile.onrender.com/api/updateProfile`,
         user,
         {
           headers: { Authorization: `Bearer ${token}` },
@@ -89,14 +89,14 @@ const Profile = () => {
       );
       
 
-      console.log(user.profile);
+      // console.log(user.profile);
       if (data) {
         toast.success("Update Successfull");
       } else {
         toast.success("Update not Successfull");
       }
     } catch (error) {
-      console.log(error);
+      // console.log(error);
       toast.error("Profile Update failed. Please try again.");
     }
   };

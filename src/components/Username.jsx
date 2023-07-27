@@ -39,7 +39,7 @@ const Username = () => {
       userName = user.userName;
       try {
         const handle = await axios.post(
-          `${process.env.REACT_APP_URL}/api/authenticate`,
+          `https://api-myprofile.onrender.com/api/authenticate`,
           { userName }
         );
         if (handle) {
@@ -49,7 +49,7 @@ const Username = () => {
           navigate("/password");
         }
       } catch (error) {
-        console.error("Error occurred:", error.message);
+        // console.error("Error occurred:", error.message);
         toast.error(
           "Error occurred while authenticating user." +
             process.env.REACT_APP_URL

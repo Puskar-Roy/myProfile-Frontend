@@ -91,7 +91,7 @@ const Register = () => {
     if (Object.keys(error).length === 0) {
       try {
         const response = await axios.post(
-          `${process.env.REACT_APP_URL}/api/register`,
+          `https://api-myprofile.onrender.com/api/register`,
           user
         );
         if(response){
@@ -102,7 +102,7 @@ const Register = () => {
           //     text: msg,
           //   });
           // }
-          console.log(response.data);
+          // console.log(response.data);
           toast.success("Registration successful!");
           navigate("/");
         }
