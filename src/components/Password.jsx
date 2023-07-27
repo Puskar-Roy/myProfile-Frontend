@@ -45,7 +45,10 @@ const Password = () => {
       const error = verifyPasswordd(user);
   if (Object.keys(error).length === 0) {
     try {
-      const { data } =  await axios.post("http://localhost:8000/api/login", { userName, password });
+      const { data } = await axios.post(
+        `${process.env.REACT_APP_URL}/api/login`,
+        { userName, password }
+      );
       localStorage.setItem("token", data.token);
       toast.success("User Login");
       navigate("/profile");

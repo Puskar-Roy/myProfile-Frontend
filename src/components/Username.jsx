@@ -39,7 +39,7 @@ const Username = () => {
       userName = user.userName;
       try {
         const handle = await axios.post(
-          "http://localhost:8000/api/authenticate",
+          `${process.env.REACT_APP_URL}/api/authenticate`,
           { userName }
         );
         if (handle) {
@@ -50,7 +50,10 @@ const Username = () => {
         }
       } catch (error) {
         console.error("Error occurred:", error.message);
-        toast.error("Error occurred while authenticating user.");
+        toast.error(
+          "Error occurred while authenticating user." +
+            process.env.REACT_APP_URL
+        );
       }
     }
   };

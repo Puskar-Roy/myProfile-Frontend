@@ -81,7 +81,7 @@ const Profile = () => {
       console.log(user);
 
       const data = await axios.put(
-        "http://localhost:8000/api/updateProfile",
+        `${process.env.REACT_APP_URL}/api/updateProfile`,
         user,
         {
           headers: { Authorization: `Bearer ${token}` },

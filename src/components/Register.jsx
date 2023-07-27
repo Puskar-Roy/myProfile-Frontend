@@ -91,7 +91,7 @@ const Register = () => {
     if (Object.keys(error).length === 0) {
       try {
         const response = await axios.post(
-          "http://localhost:8000/api/register",
+          `${process.env.REACT_APP_URL}/api/register`,
           user
         );
         if(response){
